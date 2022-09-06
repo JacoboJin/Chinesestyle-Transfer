@@ -10,7 +10,6 @@ import torch.nn as nn
 import logging
 from collections import OrderedDict
 from abc import ABC, abstractmethod
-from pccgan.models import networks
 
 
 logger = logging.getLogger(__name__)
