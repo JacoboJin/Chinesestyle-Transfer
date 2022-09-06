@@ -51,7 +51,7 @@ class BasicBlock(nn.Module):
         if dilation > 1:
             raise NotImplementedError("Dilation > 1 not supported in BasicBlock")
 
-        # Both self.conv1 and self.downsample layers downsample the input when stride != 1
+        # Both self.conv1 and self. downsample layers downsample the input when stride != 1
         self.conv1 = conv3x3(in_ch, out_ch, stride)
         self.bn1 = norm_layer(out_ch)
         self.relu = nn.ReLU(inplace=True)
